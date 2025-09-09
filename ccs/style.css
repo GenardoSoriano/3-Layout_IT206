@@ -1,0 +1,256 @@
+/* Layout 1 */
+
+.layout1 { 
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  background-color:  rgb(0, 0, 0);
+  padding: 20px;
+  border: 2px solid rgb(74, 85, 74);
+  grid-template-areas: 
+    "Top1 Top1 Top1"
+    "Left1 Semi1 Semi1"
+    "Left1 Middle1 Middle1"
+    "Left1 Bot1 Bot1";
+  grid-template-rows: 80px 7% 1fr 12%;  
+  grid-template-columns: 10% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+
+Semi1 {
+  padding: 1.2em;
+  background: purple;
+}
+Top1 {
+  padding: 1.2em;
+  background: red;
+}
+Left1 {
+  padding: 1.2em;
+  background-color: orangered;
+}
+
+Bot1 {
+  padding: 1.2em;
+  background: darkblue;
+}
+
+Middle1 {
+  padding: 1.2em;
+  background-color: green;
+}
+
+#Top1 {
+  grid-area: Top1;
+  }
+
+#Bot1 {
+  grid-area: Bot1;
+  }
+
+#Middle1 { 
+  grid-area: Middle1;      
+  }
+
+#Left1 { 
+  grid-area: Left1; 
+  }
+
+#Semi1 {
+  grid-area: Semi1;
+  }
+
+
+@media all and (max-width: 575px) {
+.layout { 
+    grid-template-areas: 
+      "Top1"
+      "Semi1"
+      "Middle1"
+      "Left1"
+      "Bot1";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+
+/*Layout 2 */
+
+.layout2 { 
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  background-color:  rgb(0, 0, 0);
+  padding: 20px;
+  border: 2px solid rgb(74, 85, 74);
+  grid-template-areas: 
+    "Top2 Top2 Right2"
+    "Semi2 Middle2 Right2"
+    "Bot2 Bot2 Bot2";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 1fr 1fr 20%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+
+Semi2 {
+  padding: 1.2em;
+  background: purple;
+}
+Top2 {
+  padding: 1.2em;
+  background: red;
+}
+Right2 {
+  padding: 1.2em;
+  background-color: rgb(0, 255, 221);
+}
+
+Bot2 {
+  padding: 1.2em;
+  background: darkblue;
+}
+
+Middle2 {
+  padding: 1.2em;
+  background-color: green;
+}
+
+#Top2 {
+  grid-area: Top2;
+  }
+
+#Bot2 {
+  grid-area: Bot2;
+  }
+
+#Middle2 { 
+  grid-area: Middle2;      
+  }
+
+#Right2 { 
+  grid-area: Right2; 
+  }
+
+#Semi2 {
+  grid-area: Semi2;
+}
+
+@media all and (max-width: 575px) {
+.layout { 
+    grid-template-areas: 
+      "Top2"
+      "Semi2"
+      "Middle2"
+      "Right2"
+      "Bot2";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+
+/* Layout 3 */
+
+.layout3 { 
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color:  rgb(0, 0, 0);
+  padding: 20px;
+  border: 2px solid rgb(74, 85, 74);
+  grid-template-areas: 
+    "Circle3 Top3 Top3 Top3 Top3"
+    "Semi3 Semi3 Semi3 Semi3 Semi3"
+    "Left3 Left3  Middle3 Middle3 Middle3"
+    "Left3 Left3 Middle3 Middle3 Middle3"
+    "Bot3 Bot3 Bot3 Bot3 Circle4";
+  grid-template-rows: 80px 7% 1fr 1fr 15%;  
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+Circle4 {
+  border-radius: 100%;
+  background: gray;
+}
+
+Circle3 {
+  border-radius: 100%;
+  background: palevioletred;
+}
+
+Semi3 {
+  padding: 1.2em;
+  background: purple;
+}
+Top3 {
+  padding: 1.2em;
+  background: red;
+}
+Left3 {
+  padding: 1.2em;
+  background-color: orangered;
+}
+
+Bot3 {
+  padding: 1.2em;
+  background: darkblue;
+}
+
+Middle3 {
+  padding: 1.2em;
+  background-color: green;
+}
+
+#Top3 {
+  grid-area: Top3;
+  }
+
+#Bot3 {
+  grid-area: Bot3;
+  }
+
+#Middle3 { 
+  grid-area: Middle3;      
+  }
+
+#Left3 { 
+  grid-area: Left3; 
+  }
+
+#Semi3 {
+  grid-area: Semi3;
+  }
+
+#Circle3 {
+  grid-area: Circle3;
+}
+
+#Circle4 {
+  grid-area: Circle4;
+}
+
+
+@media all and (max-width: 575px) {
+.layout { 
+    grid-template-areas: 
+      "Top3"
+      "Circle4"
+      "Circle3"
+      "Semi3"
+      "Middle3"
+      "Left3"
+      "Bot3";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
