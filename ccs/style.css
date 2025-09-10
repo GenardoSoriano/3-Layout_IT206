@@ -2,9 +2,6 @@
 
 .layout1 { 
   display: grid;
-  row-gap: 10px;
-  column-gap: 10px;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
   background-color:  rgb(0, 0, 0);
   padding: 20px;
   border: 2px solid rgb(74, 85, 74);
@@ -82,9 +79,6 @@ Middle1 {
 
 .layout2 { 
   display: grid;
-  row-gap: 10px;
-  column-gap: 10px;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
   background-color:  rgb(0, 0, 0);
   padding: 20px;
   border: 2px solid rgb(74, 85, 74);
@@ -160,8 +154,6 @@ Middle2 {
 
 .layout3 { 
   display: grid;
-  row-gap: 10px;
-  column-gap: 10px;
   background-color:  rgb(0, 0, 0);
   padding: 20px;
   border: 2px solid rgb(74, 85, 74);
@@ -253,4 +245,5 @@ Middle3 {
     grid-template-rows: 80px 1fr 70px 1fr 70px;  
     grid-template-columns: 1fr;
  }
+
 }
